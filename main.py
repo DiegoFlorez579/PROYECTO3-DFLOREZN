@@ -4,14 +4,14 @@ from models.models import db
 from views.routes import routes
 from flask_login import LoginManager
 from models.models import Usuarios
-import os
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
 login_manager = LoginManager(app)
 
 app.config.from_object(Config)
-db.init_app(app)
+db.SQLAlchemy(app)
 
 @login_manager.user_loader
 def load_user(user_id):
