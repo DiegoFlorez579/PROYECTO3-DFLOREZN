@@ -4,3 +4,4 @@ flask_sqlalchemy
 flask_login
 PyMySQL
 psycopg2-binary
+pymysql
