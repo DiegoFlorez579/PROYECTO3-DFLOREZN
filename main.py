@@ -20,8 +20,8 @@ def load_user(user_id):
 
 app.register_blueprint(routes)
 
-with app.app_context():
-    db.create_all()
+#with app.app_context():
+#    db.create_all()
 
 if __name__ == "__main__":
     #port = int(os.environ.get("PORT", 8080))
